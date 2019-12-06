@@ -1,0 +1,382 @@
+@import "../mixins";
+@import "../variables";
+header {
+  background-color: $cream;
+  padding: 2% 0;
+
+  .icon-three-bars {
+    color: $color;
+    font-size: $size-menu;
+  }
+}
+
+header {
+  .navbar-toggler {
+    &:active, &:focus {
+      outline: none;
+    }
+  }
+  .active-nav {
+    background-color: $yellow;
+  }
+  ul {
+    li {
+      margin: 0 10px 10px;
+
+      &:hover {
+        background-color: $yellow;
+      }
+
+      a {
+        @include menu-item;
+        color: $color;
+
+        &:hover {
+          background-color: $yellow;
+        }
+      }
+    }
+  }
+}
+
+.indent {
+  padding: 0;
+  margin: 0;
+}
+.section-headline {
+  width: 100%;
+  background: url("../../img/img-portfolio/slider_bg.jpg") no-repeat center / cover;
+  padding: 5% 0;
+  h2 .headline {
+    font-size: $smaller;
+    color: $yellow;
+    background-color: $color;
+    padding: 15px 166px 15px 15px;
+  }
+}
+
+.projects {
+  padding-top: 5%;
+  background-color: $cream;
+  .project-gallery {
+    #myCarousel {
+      .list-inline {
+        white-space:nowrap;
+        overflow-x:auto;
+      }
+      .carousel-indicators {
+        position: static;
+        left: initial;
+        width: initial;
+        margin-left: initial;
+        .active {
+          background-color: $yellow;
+        }
+      }
+      .carousel-indicators > li {
+        width: initial;
+        height: initial;
+        text-indent: initial;
+      }
+      .carousel-indicators > li.active img {
+        opacity: 0.7;
+      }
+      .carousel-style {
+        position: relative;
+        background-color: $color;
+      }
+      .indicators-style {
+        background-color: $black;
+      }
+      .control-type {
+        width: 5%;
+        height: 20%;
+        opacity: 1;
+        background-color: $black;
+        position: absolute;
+        top: 50%;
+        overflow: hidden;
+        .size {
+          font-size: $icon-arrow;
+        }
+        &:hover {
+          -webkit-filter: invert(0.8);
+          filter: invert(0.8);
+        }
+      }
+      .fullscreen-icon {
+        position: absolute;
+        top: 2%;
+        right: 1%;
+      }
+    }
+  }
+  .description {
+    padding: 5%;
+    .description-headline {
+      @include project-headline;
+    }
+    .description-text {
+      font-size: $small;
+      color: $color;
+    }
+    .border-text {
+      padding-bottom: 5%;
+      border-bottom: 2px solid $line;
+    }
+  }
+  .recent-project {
+    padding: 0 5% 5%;
+    .recent-project-headline {
+      @include project-headline;
+    }
+  }
+}
+
+.projects {
+  .sidebar-item {
+    background-color: $color;
+    padding: 30px 10px 20px 30px;
+    margin-bottom: 5%;
+  }
+
+  .sidebar-title {
+    font-size: $small;
+    font-weight: 600;
+    color: $yellow;
+    padding-bottom: 5%;
+  }
+
+  ul .arrow-list {
+    margin-bottom: 10px;
+
+    &:before {
+      content: url("../../img/img-project/arrow.png");
+      @include list-style;
+    }
+
+    a {
+      @include list-link;
+      padding: 7px 0;
+
+      li {
+        display: inline;
+      }
+    }
+  }
+
+  ul {
+    a {
+      @include list-link;
+    }
+    .like-text {
+      font-size: $smaller;
+      color: $yellow;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    .post-size {
+      max-width: 365px;
+    }
+    .image-list-post-one {
+      &:before {
+        content: url("../../img/img-project/popular_post_img_1.png");
+        @include list-style;
+      }
+    }
+    .image-list-post-two {
+      &:before {
+        content: url("../../img/img-project/popular_post_img_2.png");
+        @include list-style;
+      }
+    }
+    .image-list-post-three {
+      &:before {
+        content: url("../../img/img-project/popular_post_img_3.png");
+        @include list-style;
+      }
+    }
+    .image-list-post-four {
+      &:before {
+        content: url("../../img/img-project/popular_post_img_4.png");
+        @include list-style;
+      }
+    }
+    .image-list-post-five {
+      &:before {
+        content: url("../../img/img-project/popular_post_img_5.png");
+        @include list-style;
+      }
+    }
+
+    .tags-style {
+      background-color: $yellow;
+      margin: 1px;
+
+      a {
+        color: $color;
+        font-size: $smaller;
+        padding: 2px 10px;
+      }
+    }
+  }
+}
+
+
+
+
+.footer {
+  background-color: $color;
+  .footer-headline {
+    @include footer-headline;
+  }
+  .footer-text {
+    @include footer-text;
+  }
+  .footer-btn {
+    @include btn;
+  }
+  .photo-stream {
+    padding: 1%;
+  }
+  .footer-center {
+    overflow: hidden;
+  }
+  ul .twitter-list {
+    &:before {
+      content: "";
+      background-image: url("../../img/twitter-icon.png");
+      background-repeat: no-repeat;
+      width: 25px;
+      height: 25px;
+      display: block;
+      padding-right: 40px;
+      margin-top: 10px;
+    }
+    .twitter-link {
+      @include twitter-link;
+    }
+    .twitter {
+      text-decoration: none;
+      color: $white;
+    }
+    .days-ago {
+      @include twitter-link;
+      font-size: $extra-small;
+    }
+  }
+  .icon-style {
+    @include icon-style;
+
+    &:hover {
+      -webkit-filter: invert(0.8);
+      filter: invert(0.8);
+    }
+  }
+
+  .address-list {
+    &:before {
+      content: "";
+      background-image: url("../../img/adress.png");
+      @include list-icon;
+    }
+  }
+  .phone-list {
+    &:before {
+      content: "";
+      background-image: url("../../img/phone.png");
+      @include list-icon;
+    }
+  }
+  .mail-list {
+    &:before {
+      content: "";
+      background-image: url("../../img/email.png");
+      @include list-icon;
+    }
+  }
+  .mail-link {
+    @include twitter-link;
+  }
+  .form-style {
+    @include form-style;
+  }
+  .follow-btn {
+    border: none;
+    background-color: $black;
+    padding: 0;
+    &:active, &:focus {
+      outline: none;
+    }
+    .icon-input {
+      font-size: 1.2em;
+      color: $white;
+      padding: 5px 5px 0 5px;
+      background-color: $black;
+    }
+  }
+  .footer-menu {
+    background-color: $black;
+    padding: 10px 0;
+    .footer-menu-title {
+      @include footer-text;
+      a {
+        color: $white;
+      }
+    }
+    .footer-nav {
+      padding: 5% 0;
+      a {
+        color: $white;
+        font-size: $smaller;
+        &:hover {
+          color: $yellow;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    ul a {
+      padding: 29px 9px;
+    }
+  }
+  .section-headline {
+    padding: 2% 0;
+    h2 .headline {
+      font-size: $small;
+    }
+  }
+  .projects {
+    .project-gallery {
+      padding-right: 15px;
+    }
+  }
+
+  .footer {
+    .middle {
+      line-height: 1;
+    }
+    .footer-text {
+      font-size: $footer;
+    }
+    .days-ago {
+      font-size: $extra-small;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .footer {
+    .footer-text {
+      font-size: $smaller;
+    }
+    .middle {
+      line-height: 1.7;
+    }
+  }
+}
+
