@@ -176,3 +176,12 @@
 .icon-forward:before {
   content: "\54";
 }
+.icon-heart-o:before {
+  content: "\55";
+}
+.icon-heart:before {
+  content: "\56";
+}
+.icon-search:before {
+  content: "\57";
+}

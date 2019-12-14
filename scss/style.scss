@@ -1,49 +1,9 @@
 @import "mixins";
 @import "variables";
 
-header {
-  background-color: $cream;
-  padding: 2% 0;
-
-  .icon-three-bars {
-    color: $color;
-    font-size: $size-menu;
-  }
-}
-
-header {
-  .navbar-toggler {
-    &:active, &:focus {
-      outline: none;
-    }
-  }
-  .active-nav {
-    background-color: $yellow;
-  }
-  ul {
-    li {
-      margin: 0 10px 10px;
-
-      &:hover {
-        background-color: $yellow;
-      }
-
-      a {
-        @include menu-item;
-        color: $color;
-
-        &:hover {
-          background-color: $yellow;
-        }
-      }
-    }
-  }
-}
-
-.indent {
-  padding: 0;
-  margin: 0;
-}
+/*--------------------------------------------------------------------------------------------------------
+---------------------------------------------HOME---------------------------------------------------------
+----------------------------------------------------------------------------------------------------------*/
 
 .section-slider {
   width: 100%;
@@ -91,10 +51,11 @@ header {
 .section-slider {
   .btn {
     @include btn;
+    transition: all .3s linear;
 
     &:hover {
       color: $yellow;
-      background-color: $color;
+      border-bottom: 2px solid $yellow;
     }
   }
 }
@@ -270,341 +231,325 @@ header {
     transform: translateX(0);
   }
   a {
+    transition: all .3s linear;
     &:hover {
       -webkit-filter: invert(0.8);
       filter: invert(0.8);
     }
   }
 }
-.footer {
-  background-color: $color;
-  .footer-headline {
-    @include footer-headline;
-  }
-  .footer-text {
-    @include footer-text;
-  }
-  .footer-btn {
-    @include btn;
-  }
-  .photo-stream {
-    padding: 1%;
-  }
-  .footer-center {
-    overflow: hidden;
-  }
-  ul .twitter-list {
-    &:before {
-      content: "";
-      background-image: url("../img/twitter-icon.png");
-      background-repeat: no-repeat;
-      width: 25px;
-      height: 25px;
-      display: block;
-      padding-right: 40px;
-      margin-top: 10px;
-    }
-    .twitter-link {
-      @include twitter-link;
-    }
-    .twitter {
-      text-decoration: none;
-      color: $white;
-    }
-    .days-ago {
-      @include twitter-link;
-      font-size: $extra-small;
-    }
-  }
-  .icon-style {
-    @include icon-style;
 
-    &:hover {
-      -webkit-filter: invert(0.8);
-      filter: invert(0.8);
-    }
+/*--------------------------------------------------------------------------------------------------------
+---------------------------------------------PORTFOLIO----------------------------------------------------
+----------------------------------------------------------------------------------------------------------*/
+
+.section-headline {
+  width: 100%;
+  background: url("../img/img-portfolio/slider_bg.jpg") no-repeat center / cover;
+  padding: 5% 0;
+  h2 .headline {
+    font-size: $smaller;
+    color: $yellow;
+    background-color: $color;
+    padding: 15px 100px 15px 15px;
+  }
+}
+.portfolio {
+  background-color: $cream;
+  padding: 4% 0;
+
+  .hide {
+    display: none;
   }
 
-  .address-list {
-    &:before {
-      content: "";
-      background-image: url("../img/adress.png");
-      @include list-icon;
-    }
+  .portfolio-headline {
+    @include design-headline;
   }
-  .phone-list {
-    &:before {
-      content: "";
-      background-image: url("../img/phone.png");
-      @include list-icon;
-    }
+
+  .portfolio-title {
+    @include design-text;
   }
-  .mail-list {
-    &:before {
-      content: "";
-      background-image: url("../img/email.png");
-      @include list-icon;
-    }
-  }
-  .mail-link {
-    @include twitter-link;
-  }
-  .form-style {
-    @include form-style;
-  }
-  .follow-btn {
-    border: none;
-    background-color: $black;
-    padding: 0;
-    &:active, &:focus {
-      outline: none;
-    }
-    .icon-input {
-      font-size: 1.2em;
-      color: $white;
-      padding: 5px 5px 0 5px;
-      background-color: $black;
-    }
-  }
-  .footer-menu {
-    background-color: $black;
-    padding: 10px 0;
-    .footer-menu-title {
-      @include footer-text;
-      a {
-        color: $white;
+
+  .filters {
+    .btn-filter {
+      font-size: $smaller;
+      font-weight: 600;
+      color: $color;
+      border: none;
+      background-color: transparent;
+      padding: 2px 4px;
+      margin: 1px;
+
+      &:active, &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        background-color: $yellow;
       }
     }
-    .footer-nav {
-      padding: 5% 0;
-      a {
+
+    .is-checked {
+      background-color: $yellow;
+      border: none;
+    }
+  }
+}
+
+.portfolio-list {
+  padding: 2% 0;
+
+  .portfolio-item {
+    border: 10px solid $cream;
+    border-bottom: 50px solid $cream;
+    .photo {
+      width: 100%;
+    }
+    .portfolio-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $yellow;
+      -webkit-transition: 0.8s linear;
+      -o-transition: 0.8s linear;
+      transition: 0.8s linear;
+      opacity: 0;
+
+      .arrow {
+        width: 50%;
+        -webkit-transition: 0.2s linear;
+        -o-transition: 0.2s linear;
+        transition: 0.2s linear;
+        opacity: 0.7;
+        &:hover {
+          opacity: 1;
+        }
+
+        .icon-arrow {
+          font-size: $icon-arrow;
+          color: $white;
+          background-color: $color;
+          padding: 30px;
+        }
+      }
+    }
+    &:hover .portfolio-layer {
+      opacity: 0.7;
+    }
+  }
+}
+
+/*--------------------------------------------------------------------------------------------------------
+---------------------------------------------PROJECT------------------------------------------------------
+----------------------------------------------------------------------------------------------------------*/
+
+.section-headline-project {
+  width: 100%;
+  background: url("../img/img-portfolio/slider_bg.jpg") no-repeat center / cover;
+  padding: 5% 0;
+  h2 .headline {
+    font-size: $smaller;
+    color: $yellow;
+    background-color: $color;
+    padding: 15px 166px 15px 15px;
+  }
+}
+
+.projects {
+  padding-top: 5%;
+  background-color: $cream;
+  .project-gallery {
+    #myCarousel {
+      .list-inline {
+        white-space:nowrap;
+        overflow-x:auto;
+      }
+      .carousel-indicators {
+        position: static;
+        left: initial;
+        width: initial;
+        margin-left: initial;
+        .active {
+          background-color: $yellow;
+        }
+      }
+      .carousel-indicators > li {
+        width: initial;
+        height: initial;
+        text-indent: initial;
+      }
+      .carousel-indicators > li.active img {
+        opacity: 0.7;
+      }
+      .carousel-style {
+        position: relative;
+        background-color: $color;
+      }
+      .indicators-style {
+        background-color: $black;
+      }
+      .control-type {
+        width: 5%;
+        height: 20%;
+        opacity: 1;
+        background-color: $black;
+        position: absolute;
+        top: 50%;
+        overflow: hidden;
+        .size {
+          font-size: $icon-arrow;
+        }
+        &:hover {
+          -webkit-filter: invert(0.8);
+          filter: invert(0.8);
+          color: $cream;
+        }
+      }
+      .fullscreen-icon {
         color: $white;
-        font-size: $smaller;
+        position: absolute;
+        top: 2%;
+        right: 1%;
+        transition: all .3s linear;
         &:hover {
           color: $yellow;
         }
       }
     }
   }
-}
-
-
-
-
-
-@media (min-width: 425px) {
-  .section-slider {
-    h2 span {
+  .description {
+    padding: 5%;
+    .description-headline {
+      @include project-headline;
+    }
+    .description-text {
       font-size: $small;
+      color: $color;
     }
-    p span {
-      font-size: $normal;
-    }
-  }
-}
-
-@media (min-width: 576px) {
-  .section-slider {
-    h2 span {
-      font-size: $big;
-    }
-
-    p span {
-      font-size: $big;
-    }
-
-    .btn {
-      width: 150px;
+    .border-text {
+      padding-bottom: 5%;
+      border-bottom: 2px solid $line;
     }
   }
-  #carouselExample {
-    .carousel-inner .carousel-item-right.active,
-    .carousel-inner .carousel-item-next {
-      transform: translateX(50%);
-    }
-    .carousel-inner .carousel-item-left.active,
-    .carousel-inner .carousel-item-prev {
-      transform: translateX(-50%);
-    }
-    .carousel-inner .carousel-item-right,
-    .carousel-inner .carousel-item-left{
-      transform: translateX(0);
-    }
-  }
-  .work {
-    .grid {
-      padding: 5% 0 10%;
-      .grid-sizer {
-        width: 5%;
-      }
-      .gutter-sizer {
-        width: 0;
-      }
-      .grid-item img {
-        width: 100%;
-      }
-      .grid-item--width1 {
-        width: 30%;
-      }
-      .grid-item--width2{
-        width: 20%;
-      }
-      .grid-item--width3{
-        width: 15%;
-      }
+  .recent-project {
+    padding: 0 5% 5%;
+    .recent-project-headline {
+      @include project-headline;
     }
   }
 }
 
-@media (min-width: 768px) {
-  header {
-    ul a {
-      padding: 25px 9px;
+/*--------------------------------------------------------------------------------------------------------
+---------------------------------------------BLOG---------------------------------------------------------
+----------------------------------------------------------------------------------------------------------*/
+
+.section-headline-blog {
+  width: 100%;
+  background: url("../img/img-portfolio/slider_bg.jpg") no-repeat center / cover;
+  padding: 5% 0;
+  h2 .headline {
+    font-size: $smaller;
+    color: $yellow;
+    background-color: $color;
+    padding: 15px 200px 15px 15px;
+  }
+}
+.blog {
+  background-color: $cream;
+  padding: 3% 0;
+  .blog-headline {
+    font-size: $small;
+    font-style: italic;
+    background-color: $yellow;
+    padding: 1% 13%;
+    cite {
+      font-size: $smaller;
+    }
+    .quote-link {
+      color: $black;
+      font-weight: 700;
+      transition: all .3s linear;
+      &:hover {
+        color: $google;
+      }
     }
   }
-  .section-slider {
-    h2 span {
-      font-size: $small;
+  .grid {
+    .grid-sizer, .grid-item {
+      width: 100%;
+      border-bottom: 15px solid $cream;
     }
-
-    p span {
-      font-size: $small;
+    .gutter-sizer {
+      width: 0;
     }
-
-    .btn {
-      margin-left: 150px;
+    .grid-item {
+      width: 100%;
     }
-    .control-type {
-      width: 3%;
-      height: 20%;
-      opacity: 1;
-      background-color: $black;
+  }
+  .card-item {
+    border: none;
+  }
+  .footer-card-link {
+    color: $black;
+    transition: all .3s linear;
+    &:hover {
+      color: $google;
+    }
+  }
+  .news {
+    background-color: $yellow;
+    position: relative;
+    &:before {
+      content: "";
       position: absolute;
-      top: 40%;
-      overflow: hidden;
-      .size {
-        font-size: 2em;
+      top: -30px;
+      right: 10%;
+      border: 15px solid transparent;
+      border-bottom: 15px solid $yellow;
+    }
+    .news-headline {
+      font-size: $normal;
+      font-weight: 700;
+      .news-link {
+        color: $black;
+        transition: all .3s linear;
+        &:hover {
+          color: $google;
+        }
       }
     }
-  }
-  .card {
-    .layer-one h3 {
-      font-size: $normal;
+    .news-text {
+      font-size: $smaller;
+      color: $card-text;
     }
-    .card-body p span {
-      font-size: $small;
-    }
-  }
-  .development {
-    .design-headline {
-      font-size: $big;
-    }
-    .design-text {
-      font-size: $normal;
-    }
-  }
-  #carouselExample {
-    .carousel-inner .carousel-item-right.active,
-    .carousel-inner .carousel-item-next {
-      transform: translateX(25%);
-    }
-    .carousel-inner .carousel-item-left.active,
-    .carousel-inner .carousel-item-prev {
-      transform: translateX(-25%);
-    }
-    .carousel-inner .carousel-item-right,
-    .carousel-inner .carousel-item-left{
-      transform: translateX(0);
-    }
-  }
-  .clients {
-    .control-type-mini {
-      width: 3%;
-      height: 80%;
-      top: 10%;
-      .size-mini {
-        font-size: 2em;
-        padding-top: 8px ;
-      }
-    }
-  }
-  .footer {
-    .middle {
-      line-height: 1;
-    }
-    .footer-text {
+    .card-heart {
       font-size: $footer;
+      color: $color;
+      transition: all .3s linear;
+      &:hover {
+        color: $google;
+      }
     }
-    .days-ago {
-      font-size: $extra-small;
-    }
-  }
-}
-
-@media (min-width: 992px) {
-  .section-slider {
-    .slider-headline {
-      padding-left: 5%;
-    }
-
-    h2 span {
-      font-size: $normal;
-    }
-
-    p span {
-      font-size: $normal;
-    }
-
-    .btn {
-      margin-left: 150px;
+    .footer-card-text {
+      font-size: $footer;
+      font-weight: 700;
     }
   }
-  .card {
-    .layer-one h3 {
-      font-size: $small;
-    }
-    .card-body p {
-      font-size: $smaller;
-      line-height: normal;
-    }
-  }
-  #carouselExample {
-    .carousel-inner .carousel-item-right.active,
-    .carousel-inner .carousel-item-next {
-      transform: translateX(16.666667%);
-    }
-    .carousel-inner .carousel-item-left.active,
-    .carousel-inner .carousel-item-prev {
-      transform: translateX(-16.666667%);
-    }
-    .carousel-inner .carousel-item-right,
-    .carousel-inner .carousel-item-left{
-      transform: translateX(0);
+  .page-style {
+    font-size: $smaller;
+    font-weight: 700;
+    color: $black;
+    padding: 5px;
+    background-color: $cream;
+    transition: all .3s linear;
+    &:hover {
+      background-color: $yellow;
     }
   }
-  .footer {
-    .footer-text {
-      font-size: $smaller;
-    }
-    .middle {
-      line-height: 1.7;
-    }
-  }
-}
-
-@media (min-width: 1200px) {
-  .section-slider {
-    .slider-headline {
-      padding-left: 5%;
-    }
-
-    h2 span {
-      font-size: $big;
-    }
-
-    p span {
-      font-size: $big;
-    }
+  .active-link {
+    background-color: $yellow;
   }
 }
 
