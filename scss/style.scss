@@ -458,7 +458,7 @@
 }
 .blog {
   background-color: $cream;
-  padding: 3% 0;
+  padding-top: 3%;
   .blog-headline {
     font-size: $small;
     font-style: italic;
@@ -550,6 +550,329 @@
   }
   .active-link {
     background-color: $yellow;
+  }
+}
+/*--------------------------------------------------------------------------------------------------------
+---------------------------------------------SINGLE-POST--------------------------------------------------
+----------------------------------------------------------------------------------------------------------*/
+.single-blog-wrapper {
+  .blog-text {
+    font-size: $smaller;
+    color: $color;
+    line-height: 2;
+  }
+  .share-post {
+    border-bottom: 2px solid $line;
+  }
+  .share-post-headline {
+    @include project-headline;
+  }
+  .share-icon {
+    @include icon-style;
+    font-size: $smaller;
+  }
+  .share-facebook {
+    transition: all .3s linear;
+    &:hover {
+      background-color: $facebook;
+    }
+  }
+  .share-google {
+    transition: all .3s linear;
+    &:hover {
+      background-color: $google;
+    }
+  }
+  .share-twitter {
+    transition: all .3s linear;
+    &:hover {
+      background-color: $twitter;
+    }
+  }
+  .share-linkedin {
+    transition: all .3s linear;
+    &:hover {
+      background-color: $linkedin;
+    }
+  }
+  .share-item {
+    font-size: $smaller;
+    background-color: $yellow;
+    padding: 5px 5px;
+  }
+  .related-post {
+    border-bottom: 2px solid $line;
+  }
+  .post {
+    min-height: 55px;
+  }
+  .news-headline-post {
+    font-size: $small;
+    font-weight: 700;
+
+    a {
+      color: $black;
+      transition: all .3s linear;
+
+      &:hover {
+        color: $google;
+      }
+    }
+  }
+  .comment-section {
+    border-bottom: 2px solid $line;
+  }
+  .comment {
+    padding-bottom: 40px;
+  }
+  .comment-avatar {
+    padding-top: 8px;
+    padding-right: 15px;
+  }
+  .comment-info {
+    font-size: $smaller;
+    font-weight: 700;
+    color: $black;
+    transition: all .3s linear;
+
+    &:hover {
+      color: $google;
+    }
+  }
+  .comment-form {
+    padding-bottom: 100px;
+  }
+  .comment-form-style {
+    width: 100%;
+    height: 50px;
+    border: none;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .form-comment {
+    width: 100%;
+    height: 170px;
+    border: none;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .comment-btn {
+    color: $white;
+    background-color: $black;
+    border: none;
+    border-bottom: 2px solid $black;
+    padding: 5px 10px;
+    margin-bottom: 30px;
+    transition: all .3s linear;
+
+    &:hover {
+      color: $yellow;
+      border-bottom: 2px solid $yellow;
+    }
+  }
+}
+/*--------------------------------------------------------------------------------------------------------
+---------------------------------------------ABOUT-US-----------------------------------------------------
+----------------------------------------------------------------------------------------------------------*/
+.section-headline-about {
+  width: 100%;
+  background: url("../img/img-portfolio/slider_bg.jpg") no-repeat center / cover;
+  padding: 3% 0;
+  h2 .headline {
+    font-size: $smaller;
+    color: $yellow;
+    background-color: $color;
+    padding: 15px 120px 15px 15px;
+  }
+}
+.about {
+  background-color: $cream;
+  padding: 60px 0;
+  .about-headline {
+    font-size: $small;
+  }
+  .about-subtitle {
+    font-size: $smaller2;
+    font-weight: 700;
+  }
+  .about-text {
+    font-size: $smaller2;
+    font-weight: 400;
+  }
+}
+.skills {
+  background-color: $cream;
+
+  .skills-title {
+    @include section-btn;
+  }
+  .skills-text {
+    font-size: $small;
+  }
+  .statistics-photoshop {
+    @include statistics;
+    &:after {
+      @include percent;
+      width: calc(90% - 45px);
+    }
+  }
+  .percent {
+    font-size: $smaller;
+    color: $yellow;
+    background-color: $black;
+    padding: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .percent-item {
+    font-size: $small;
+    color: $color;
+    z-index: 1;
+    position: absolute;
+    top: 9px;
+    left: 55px;
+  }
+  .statistics-html {
+    @include statistics;
+    &:after {
+      @include percent;
+      width: calc(87% - 45px);
+    }
+  }
+  .statistics-Illustrator {
+    @include statistics;
+    &:after {
+      @include percent;
+      width: calc(80% - 45px);
+    }
+  }
+  .statistics-php {
+    @include statistics;
+    &:after {
+      @include percent;
+      width: calc(76% - 45px);
+    }
+  }
+  .statistics-wordpress {
+    @include statistics;
+    &:after {
+      @include percent;
+      width: calc(70% - 45px);
+    }
+  }
+  .statistics-joomla {
+    @include statistics;
+    &:after {
+      @include percent;
+      width: calc(65% - 45px);
+    }
+  }
+  .statistics-javascript {
+    @include statistics;
+    &:after {
+      @include percent;
+      width: calc(75% - 45px);
+    }
+  }
+  .statistics-mysql {
+    @include statistics;
+    &:after {
+      @include percent;
+      width: calc(85% - 45px);
+    }
+  }
+}
+.our-team {
+  background-color: $cream;
+
+  .team-title {
+    @include section-btn;
+  }
+  .team-text {
+    font-size: $small;
+  }
+
+  .professions {
+    @include professions;
+    transition: all .3s linear;
+    &:hover {
+      background-color: $black;
+    }
+  }
+
+  .web-designer {
+    &:after {
+      content: url("../img/img-about/photo_1.png");
+      @include circle-photo;
+    }
+    &:hover:after {
+      box-shadow: 0 0 8px 2px $black;
+    }
+  }
+
+  .web-designer-second {
+    &:after {
+      content: url("../img/img-about/photo_2.png");
+      @include circle-photo;
+    }
+    &:hover:after {
+      box-shadow: 0 0 8px 2px $black;
+    }
+  }
+  .front-end-developer {
+    &:after {
+      content: url("../img/img-about/photo_3.png");
+      @include circle-photo;
+    }
+    &:hover:after {
+      box-shadow: 0 0 8px 2px $black;
+    }
+  }
+  .web-developer {
+    &:after {
+      content: url("../img/img-about/photo_4.png");
+      @include circle-photo;
+    }
+    &:hover:after {
+      box-shadow: 0 0 8px 2px $black;
+    }
+  }
+  .web-developer-second {
+    &:after {
+      content: url("../img/img-about/photo_5.png");
+      @include circle-photo;
+    }
+    &:hover:after {
+      box-shadow: 0 0 8px 2px $black;
+    }
+  }
+  .markup-developer {
+    &:after {
+      content: url("../img/img-about/photo_6.png");
+      @include circle-photo;
+    }
+    &:hover:after {
+      box-shadow: 0 0 8px 2px $black;
+    }
+  }
+  .cms-master {
+    &:after {
+      content: url("../img/img-about/photo_7.png");
+      @include circle-photo;
+    }
+    &:hover:after {
+      box-shadow: 0 0 8px 2px $black;
+    }
+  }
+  .send-cv {
+    &:after {
+      content: url("../img/img-about/photo_8.png");
+      @include circle-photo;
+    }
+    &:hover:after {
+      box-shadow: 0 0 8px 2px $black;
+    }
   }
 }
 

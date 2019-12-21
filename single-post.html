@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Skokov/blog</title>
+    <title>Skokov/single-post</title>
 </head>
 <body>
 <header>
@@ -45,48 +45,9 @@
 </section>
 <section class="blog container-fluid">
     <div class="row indent">
-        <div id="container" class="col-12 col-md-7 col-lg-8 col-xl-9 indent">
-            <ul class="grid">
-                <li class="grid-sizer"></li>
-                <li class="gutter-sizer"></li>
-                <li class="card card-item grid-item">
-                    <h2 class="blog-headline">
-                        <a href="#" class="quote-link">
-                            <q>Ability may get you to the top, but it takes character to keep you there.</q>
-                        </a>
-                        <span class="text-right d-block">
-                            <a href="#" class="footer-card-link"><cite title="John Wooden">John Wooden</cite></a>
-                        </span>
-                    </h2>
-                </li>
-                <li class="card card-item grid-item">
-                    <a href="#">
-                        <picture>
-                            <source srcset="img/img-blog/img_news_2.webp" type="image/webp">
-                            <img src="img/img-blog/img_news_2.png" alt="Photo mews" class="card-img-top">
-                        </picture>
-                    </a>
-                    <div class="card-body news">
-                        <h3 class="card-title news-headline text-uppercase">
-                            <a href="#" class="news-link">Multipurpose Agency WordPress Theme</a>
-                        </h3>
-                        <p class="card-text news-text">At ThemeTrust, our premium WordPress theme shop, we just released
-                            our latest WordPress theme. Baylie is a multipurpose agency theme
-                            featuring a full screen parallax slideshow.
-                        </p>
-                        <footer class="d-flex justify-content-between align-items-center pt-3">
-                            <a href="#" aria-label="heart">
-                                <span class="icon-heart card-heart"> 0</span>
-                            </a>
-                            <span class="footer-card-text text-right">
-                                <a href="#" class="footer-card-link">
-                                    by John Wooden / 1 comments / <time datetime="2013-10-12 12:00">Oct. 12, 2013</time>
-                                </a>
-                            </span>
-                        </footer>
-                    </div>
-                </li>
-                <li class="card card-item grid-item">
+        <div class="col-12 col-md-7 col-lg-8 col-xl-9 indent">
+            <div class="single-blog-wrapper">
+                <div class="card card-item mb-5">
                     <a href="single-post.html">
                         <picture>
                             <source srcset="img/img-blog/img_news_1.webp" type="image/webp">
@@ -94,16 +55,12 @@
                         </picture>
                     </a>
                     <div class="card-body news">
-                        <h3 class="card-title news-headline text-uppercase">
-                            <a href="single-post.html" class="news-link">17 Inspiring Examples of Parallax Scrolling Sites</a>
+                        <h3 class="card-title news-headline text-uppercase post-headline">
+                            <a href="single-post.html" class="news-link">17 Inspiring Examples of Parallax Scrolling
+                                Sites</a>
                         </h3>
-                        <p class="card-text news-text">When it comes to parallax scrolling, the line that separates good
-                            and
-                            bad choices is pretty thin. A while back parallax was being used to
-                            deliver an explosion of elements floating around the screen.
-                        </p>
-                        <footer class="d-flex justify-content-between align-items-center pt-3">
-                            <a href="#" aria-label="heart">
+                        <footer class="d-flex justify-content-end align-items-center pt-3">
+                            <a href="#" aria-label="heart" class="pr-5">
                                 <span class="icon-heart card-heart"> 15</span>
                             </a>
                             <span class="footer-card-text text-right">
@@ -113,182 +70,304 @@
                             </span>
                         </footer>
                     </div>
-                </li>
-                <li class="card card-item grid-item">
+                </div>
+                <div class="blog-content px-4">
+                    <p class="blog-text">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore
+                        magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                        ullamcorper suscipit lobortis nisl ut
+                        aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                        esse molestie consequat,
+                        vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                        blandit praesent luptatum zzril
+                        delenit augue duis dolore te feugait nulla facilisi.
+                    </p>
+                    <p class="blog-text">
+                        Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
+                        placerat facer possim
+                        assum.
+                    </p>
+                    <p class="blog-text">
+                        Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+                        Investigationes demonstraverunt
+                        lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui
+                        sequitur mutationem
+                        consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram,
+                        anteposuerit
+                        litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui
+                        nunc nobis videntur
+                        parum clari, fiant sollemnes in futurum.
+                    </p>
                     <a href="#">
                         <picture>
-                            <source srcset="img/img-blog/img_news_4.webp" type="image/webp">
-                            <img src="img/img-blog/img_news_4.png" alt="Photo mews" class="card-img-top">
+                            <source srcset="img/img-blog/img_post_1.webp" type="image/webp">
+                            <img src="img/img-blog/img_post_1.png" alt="Post photo" class="card-img p-3 my-3">
                         </picture>
                     </a>
-                    <div class="card-body news">
-                        <h3 class="card-title news-headline text-uppercase">
-                            <a href="#" class="news-link">Inspiring Examples of Color in Web Design</a>
-                        </h3>
-                        <p class="card-text news-text">Last week we showcased 13 Beautiful Examples of Bold Colors
-                            in Web Design and we received several emails asking us to put
-                            together a list with specific colors.
-                        </p>
-                        <footer class="d-flex justify-content-between align-items-center pt-3">
-                            <a href="#" aria-label="heart">
-                                <span class="icon-heart card-heart"> 19</span>
-                            </a>
-                            <span class="footer-card-text text-right">
-                                <a href="#" class="footer-card-link">
-                                by John Wooden / 9 comments / <time datetime="2013-10-10 12:00">Oct. 10, 2013</time>
-                                </a>
-                            </span>
-                        </footer>
-                    </div>
-                </li>
-                <li class="card card-item grid-item">
+                    <p class="blog-text">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore
+                        magna aliquam erat volutpat.
+                    </p>
                     <a href="#">
                         <picture>
-                            <source srcset="img/img-blog/img_news_3.webp" type="image/webp">
-                            <img src="img/img-blog/img_news_3.png" alt="Photo mews" class="card-img-top">
+                            <source srcset="img/img-blog/img_post_2.webp" type="image/webp">
+                            <img src="img/img-blog/img_post_2.png" alt="Post photo" class="card-img p-3 my-3">
                         </picture>
                     </a>
-                    <div class="card-body news">
-                        <h3 class="card-title news-headline text-uppercase">
-                            <a href="#" class="news-link">20 Resources for Beginner Designers & Developers</a>
-                        </h3>
-                        <p class="card-text news-text">Getting started in the world of design can be both thrilling and
-                            intimidating. Sometimes, you feel like you just don’t have the tools
-                            or skills you need to complete even the most basic projects.
-                        </p>
-                        <footer class="d-flex justify-content-between align-items-center pt-3">
-                            <a href="#" aria-label="heart">
-                                <span class="icon-heart card-heart"> 8</span>
-                            </a>
-                            <span class="footer-card-text text-right">
-                                <a href="#" class="footer-card-link">
-                                by John Wooden / 8 comments / <time datetime="2013-10-10 12:00">Oct. 10, 2013</time>
-                                </a>
-                            </span>
-                        </footer>
-                    </div>
-                </li>
-                <li class="card card-item grid-item">
-                    <a href="#">
-                        <picture>
-                            <source srcset="img/img-blog/img_news_6.webp" type="image/webp">
-                            <img src="img/img-blog/img_news_6.png" alt="Photo mews" class="card-img-top">
-                        </picture>
-                    </a>
-                    <div class="card-body news">
-                        <h3 class="card-title news-headline text-uppercase">
-                            <a href="#" class="news-link">15 Fresh Examples of Clean and Minimal Web Designs</a>
-                        </h3>
-                        <p class="card-text news-text">As a designer, it can be tempting to use a lot of unnecessary
-                            design
-                            elements or a complex color palette to make a website stand out.
-                        </p>
-                        <footer class="d-flex justify-content-between align-items-center pt-3">
-                            <a href="#" aria-label="heart">
-                                <span class="icon-heart card-heart"> 21</span>
-                            </a>
-                            <span class="footer-card-text text-right">
-                                <a href="#" class="footer-card-link">
-                                by John Wooden / 0 comments / <time datetime="2013-10-09 12:00">Oct. 09, 2013</time>
-                                </a>
-                            </span>
-                        </footer>
-                    </div>
-                </li>
-                <li class="card card-item grid-item">
-                    <a href="#">
-                        <picture>
-                            <source srcset="img/img-blog/img_news_5.webp" type="image/webp">
-                            <img src="img/img-blog/img_news_5.png" alt="Photo mews" class="card-img-top">
-                        </picture>
-                    </a>
-                    <div class="card-body news">
-                        <h3 class="card-title news-headline text-uppercase">
-                            <a href="#" class="news-link">18 Minimalistic Home Offices to Inspire You</a>
-                        </h3>
-                        <p class="card-text news-text">It doesn’t matter if you work from home or if you use your own
-                            space
-                            only at night or on the weekends, home offices are great! They give
-                            us a chance to create a space just the way we want it.
-                        </p>
-                        <footer class="d-flex justify-content-between align-items-center pt-3">
-                            <a href="#" aria-label="heart">
-                                <span class="icon-heart card-heart"> 2</span>
-                            </a>
-                            <span class="footer-card-text text-right">
-                                <a href="#" class="footer-card-link">
-                                by John Wooden / 0 comments / <time datetime="2013-10-08 12:00">Oct. 08, 2013</time>
-                                </a>
-                            </span>
-                        </footer>
-                    </div>
-                </li>
-                <li class="card card-item grid-item">
-                    <a href="#">
-                        <picture>
-                            <source srcset="img/img-blog/img_news_7.webp" type="image/webp">
-                            <img src="img/img-blog/img_news_7.png" alt="Photo mews" class="card-img-top">
-                        </picture>
-                    </a>
-                    <div class="card-body news">
-                        <h3 class="card-title news-headline text-uppercase">
-                            <a href="#" class="news-link">15 Websites with Beautiful Typography</a>
-                        </h3>
-                        <p class="card-text news-text">We are continuing to see more an more web designers realize the
-                            importance of typography. And with services like Typekit,
-                            Google Fonts, and Fontdeck
-                        </p>
-                        <footer class="d-flex justify-content-between align-items-center pt-3">
-                            <a href="#" aria-label="heart">
-                                <span class="icon-heart card-heart"> 13</span>
-                            </a>
-                            <span class="footer-card-text text-right">
-                                <a href="#" class="footer-card-link">
-                                by John Wooden / 2 comments / <time datetime="2013-10-03 12:00">Oct. 03, 2013</time>
-                                </a>
-                            </span>
-                        </footer>
-                    </div>
-                </li>
-            </ul>
-            <nav aria-label="page-navigation" class="container py-4">
-                <ul class="pagination justify-content-between">
-                    <li class="page-list">
-                        <a class="text-uppercase page-style" href="#">Prev</a>
-                    </li>
-                    <li>
-                        <ul class="d-flex">
-                            <li class="page-list">
-                                <a class="page-style" href="#">1</a>
+                    <p class="blog-text">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore
+                        magna aliquam erat volutpat.
+                    </p>
+                    <p class="blog-text">
+                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                        aliquip ex ea commodo
+                        consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                        consequat, vel illum dolore eu
+                        feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+                        luptatum zzril
+                        delenit augue duis dolore te feugait nulla facilisi.
+                    </p>
+                    <div class="share-post row py-5">
+                        <div class="col-12 pb-3 col-lg-5 pb-lg-0 d-flex justify-content-lg-start align-item-center indent">
+                            <h3 class="share-post-headline text-uppercase">
+                                Share this post
+                            </h3>
+                        </div>
+                        <ul class="d-flex col-12 col-lg-7 justify-content-lg-end align-item-center indent">
+                            <li class="d-flex pr-2 align-item-center">
+                                <a class="icon-facebook share-icon share-facebook d-block" href="#"></a>
+                                <span class="share-item d-block">15</span>
                             </li>
-                            <li class="page-list">
-                                <a class="page-style" href="#">2</a>
+                            <li class="d-flex pr-2">
+                                <a class="icon-google-plus share-icon share-google d-block" href="#"></a>
+                                <span class="share-item d-block">34</span>
                             </li>
-                            <li class="page-list" aria-current="page">
-                                <a class="page-style active-link" href="#">3</a>
+                            <li class="d-flex pr-2">
+                                <a class="icon-twitter-1 share-icon share-twitter d-block" href="#"></a>
+                                <span class="share-item d-block">162</span>
                             </li>
-                            <li class="page-list" aria-current="page">
-                                <a class="page-style" href="#">4</a>
-                            </li>
-                            <li class="page-list" aria-current="page">
-                                <a class="page-style" href="#">5</a>
-                            </li>
-                            <li class="page-list" aria-current="page">
-                                <a class="page-style" href="#">...</a>
-                            </li>
-                            <li class="page-list" aria-current="page">
-                                <a class="page-style" href="#">19</a>
-                            </li>
-                            <li class="page-list" aria-current="page">
-                                <a class="page-style" href="#">20</a>
+                            <li class="d-flex">
+                                <a class="icon-linkedin-1 share-icon share-linkedin d-block" href="#"></a>
+                                <span class="share-item d-block">7</span>
                             </li>
                         </ul>
-                    </li>
-                    <li class="page-item">
-                        <a class="text-uppercase page-style" href="#">Next</a>
-                    </li>
-                </ul>
-            </nav>
+                    </div>
+                    <div class="related-post row pt-5 pb-4">
+                        <div class="col-12 indent">
+                            <h3 class="share-post-headline text-uppercase d-inline-block mb-3">
+                                Related posts
+                            </h3>
+                        </div>
+                        <div class="col-12 col-xl-4 px-md-1 card-item mb-3 indent">
+                            <a href="#">
+                                <picture>
+                                    <source srcset="img/img-blog/img_related_1.webp" type="image/webp">
+                                    <img src="img/img-blog/img_related_1.png" alt="Photo mews" class="card-img-top">
+                                </picture>
+                            </a>
+                            <div class="card-body news post px-3 py-2 ">
+                                <h3 class="news-headline-post text-uppercase">
+                                    <a href="#">18 Minimalistic Home Offices to Inspire You</a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-4 px-md-1 card-item mb-3 indent">
+                            <a href="#">
+                                <picture>
+                                    <source srcset="img/img-blog/img_related_2.webp" type="image/webp">
+                                    <img src="img/img-blog/img_related_2.png" alt="Photo mews" class="card-img-top">
+                                </picture>
+                            </a>
+                            <div class="card-body news post px-3 py-2">
+                                <h3 class="news-headline-post text-uppercase">
+                                    <a href="#">20 Resources for Beginner Designers & Developers</a>
+                                </h3>
+                            </div>
+                        </div>
+                        <li class="col-12 col-xl-4 px-md-1 card-item mb-3 indent">
+                            <a href="#">
+                                <picture>
+                                    <source srcset="img/img-blog/img_related_3.webp" type="image/webp">
+                                    <img src="img/img-blog/img_related_3.png" alt="Photo mews" class="card-img-top">
+                                </picture>
+                            </a>
+                            <div class="card-body news post px-3 py-2">
+                                <h3 class="news-headline-post text-uppercase">
+                                    <a href="#">Multipurpose Agency WordPress Theme</a>
+                                </h3>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="comment-section row pt-5">
+                            <h3 class="share-post-headline text-uppercase d-inline-block mb-4">
+                                6 Comments
+                            </h3>
+                        <ul>
+                            <li class="comment d-flex justify-content-start">
+                                <div class="comment-avatar">
+                                    <a href="#">
+                                        <picture>
+                                            <source srcset="img/img-blog/comment_2.webp" type="image/webp">
+                                            <img src="img/img-blog/comment_2.png" alt="Photo mews">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="">
+                                    <a href="#" class="comment-info">Skokov / 2 hours ago / reply</a>
+                                    <p class="blog-text pt-2">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                        nonummy nibh euismod tincidunt ut laoreet
+                                        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                                        exerci tation ullamcorper
+                                        suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
+                                        iriure
+                                        dolor in hendrerit in vulputate
+                                        velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+                                        vero
+                                        eros et accumsan et iusto odio
+                                        dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te
+                                        feugait
+                                        nulla facilisi.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="comment d-flex justify-content-start">
+                                <div class="comment-avatar">
+                                    <a href="#">
+                                        <picture>
+                                            <source srcset="img/img-blog/comment_3.webp" type="image/webp">
+                                            <img src="img/img-blog/comment_3.png" alt="Photo mews">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="">
+                                    <a href="#" class="comment-info">wernay / 3 hours ago / reply</a>
+                                    <p class="blog-text pt-2">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                                        dolore magna aliquam erat volutpat.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="comment d-flex justify-content-start">
+                                <div class="comment-avatar">
+                                    <a href="#">
+                                        <picture>
+                                            <source srcset="img/img-blog/comment_4.webp" type="image/webp">
+                                            <img src="img/img-blog/comment_4.png" alt="Photo mews">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="comment-text">
+                                    <a href="#" class="comment-info">mr. dev / 9 hours ago / reply</a>
+                                    <p class="blog-text pt-2 pb-3">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                                        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                                        suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+                                        velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+                                        dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.  Lorem ipsum dolor
+                                        sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                        aliquam erat volutpat.
+                                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+                                        commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+                                        vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+                                        luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                                    </p>
+                                    <ul>
+                                        <li class="d-flex justify-content-start">
+                                            <div class="comment-avatar">
+                                                <a href="#">
+                                                    <picture>
+                                                        <source srcset="img/img-blog/comment_3.webp" type="image/webp">
+                                                        <img src="img/img-blog/comment_3.png" alt="Photo mews">
+                                                    </picture>
+                                                </a>
+                                            </div>
+                                            <div class="comment-text">
+                                                <a href="#" class="comment-info">wernay / 3 hours ago / reply</a>
+                                                <p class="blog-text pt-2 pb-3">
+                                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.
+                                                </p>
+                                                <ul>
+                                                    <li class="d-flex justify-content-start">
+                                                        <div class="comment-avatar">
+                                                            <a href="#">
+                                                                <picture>
+                                                                    <source srcset="img/img-blog/comment_4.webp" type="image/webp">
+                                                                    <img src="img/img-blog/comment_4.png" alt="Photo mews">
+                                                                </picture>
+                                                            </a>
+                                                        </div>
+                                                        <div class="comment-text">
+                                                            <a href="#" class="comment-info">mr. dev / 9 hours ago / reply</a>
+                                                            <p class="blog-text pt-2 pb-3">
+                                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                                                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                                                                nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="comment d-flex justify-content-start">
+                                <div class="comment-avatar">
+                                    <a href="#">
+                                        <picture>
+                                            <source srcset="img/img-blog/comment_1.webp" type="image/webp">
+                                            <img src="img/img-blog/comment_1.png" alt="Photo mews">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="comment-text">
+                                    <a href="#" class="comment-info">denpro / 2 hours ago / reply</a>
+                                    <p class="blog-text pt-2">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                        nonummy nibh euismod tincidunt ut laoreet
+                                        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                                        exerci tation ullamcorper
+                                        suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
+                                        iriure
+                                        dolor in hendrerit in vulputate
+                                        velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+                                        vero
+                                        eros et accumsan et iusto odio
+                                        dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te
+                                        feugait
+                                        nulla facilisi.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="comment-form row pt-5">
+                        <h3 class="share-post-headline text-uppercase d-inline-block mb-4">
+                            Leave a comment
+                        </h3>
+                        <div class="col-12 indent">
+                            <form action="#" method="POST">
+                                <div class="row indent">
+                                    <div class="col-12 col-lg-6 indent pr-lg-3">
+                                        <input type="text" name="name" placeholder="name ..." class="comment-form-style">
+                                    </div>
+                                    <div class="col-12 col-lg-6 indent">
+                                        <input type="email" name="email" placeholder="email ..." class="comment-form-style">
+                                    </div>
+                                    <div class="col-12 indent">
+                                        <textarea name="comment" placeholder="comment ..." class="form-comment"></textarea>
+                                    </div>
+                                    <button type="submit" class="comment-btn ml-auto">Add a comment</button>
+                                   </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <aside class="col-12 col-md-5 col-lg-4 col-xl-3 indent">
             <ul>
@@ -296,7 +375,8 @@
                     <form action="#" method="GET" name="search">
                         <div class="d-flex">
                             <input type="search" name="q" placeholder="Search..." class="search-place">
-                            <button type="submit" formaction="http://google.com/search?q" class="search-btn"></button>
+                            <button type="submit" formaction="http://google.com/search?q" class="search-btn">
+                            </button>
                         </div>
                     </form>
                 </li>
@@ -391,7 +471,8 @@
                     <ul>
                         <li class="image-list-post-one d-flex justify-content-start align-item-center">
                             <div class="row indent post-size">
-                                <a href="#" class="d-block col-12 indent text-uppercase">15 Fresh Examples of Clean and Minimal Web Designs</a>
+                                <a href="#" class="d-block col-12 indent text-uppercase">15 Fresh Examples of Clean
+                                    and Minimal Web Designs</a>
                                 <span class="like-text d-block text-right col-12 indent">
                                     <time datetime="2013-10-09 12:00">Oct. 09, 2013</time>
                                     <a href="#" aria-label="heart"><span class="icon-heart"></span></a> 21
@@ -400,7 +481,8 @@
                         </li>
                         <li class="image-list-post-two d-flex justify-content-start align-item-center">
                             <div class="row indent post-size">
-                                <a href="#" class="d-block col-12 indent text-uppercase">Inspiring Examples of Color in Web Design</a>
+                                <a href="#" class="d-block col-12 indent text-uppercase">Inspiring Examples of Color
+                                    in Web Design</a>
                                 <span class="like-text d-block text-right col-12 indent">
                                     <time datetime="2013-10-10 12:00">Oct. 10, 2013</time>
                                     <a href="#" aria-label="heart"><span class="icon-heart"></span></a> 19
@@ -409,7 +491,8 @@
                         </li>
                         <li class="image-list-post-three d-flex justify-content-start align-item-center">
                             <div class="row indent post-size">
-                                <a href="#" class="d-block col-12 indent text-uppercase">17 Inspiring Examples of Parallax Scrolling Sites</a>
+                                <a href="#" class="d-block col-12 indent text-uppercase">17 Inspiring Examples of
+                                    Parallax Scrolling Sites</a>
                                 <span class="like-text d-block text-right col-12 indent">
                                     <time datetime="2013-10-12 12:00">Oct. 12, 2013</time>
                                     <a href="#" aria-label="heart"><span class="icon-heart"></span></a> 15
@@ -418,7 +501,8 @@
                         </li>
                         <li class="image-list-post-four d-flex justify-content-start align-item-center">
                             <div class="row indent post-size">
-                                <a href="#" class="d-block col-12 indent text-uppercase">15 Websites with Beautiful Typography</a>
+                                <a href="#" class="d-block col-12 indent text-uppercase">15 Websites with Beautiful
+                                    Typography</a>
                                 <span class="like-text d-block text-right col-12 indent">
                                     <time datetime="2013-10-03 12:00">Oct. 03, 2013</time>
                                     <a href="#" aria-label="heart"><span class="icon-heart"></span></a> 13
@@ -427,7 +511,8 @@
                         </li>
                         <li class="image-list-post-five d-flex justify-content-start align-item-center">
                             <div class="row indent post-size">
-                                <a href="#" class="d-block col-12 indent text-uppercase">20 Resources for Beginner Designers & Developers</a>
+                                <a href="#" class="d-block col-12 indent text-uppercase">20 Resources for Beginner
+                                    Designers & Developers</a>
                                 <span class="like-text d-block text-right col-12 indent">
                                     <time datetime="2013-10-10 12:00">Oct. 10, 2013</time>
                                     <a href="#" aria-label="heart"><span class="icon-heart"></span></a> 7
@@ -499,7 +584,6 @@
             </ul>
         </aside>
     </div>
-
 </section>
 <footer class="footer">
     <div class="container">
@@ -652,7 +736,9 @@
                         </li>
                         <li class="mail-list d-flex align-content-center">
                             <p class="footer-text pt-3">
-                                <span class="d-block">E-mail: <a href="mailto:freeforwebdesign@gmail.com" class="mail-link">freeforwebdesign@gmail.com</a></span>
+                                <span class="d-block">E-mail:
+                                    <a href="mailto:freeforwebdesign@gmail.com" class="mail-link">freeforwebdesign@gmail.com</a>
+                                </span>
                             </p>
                         </li>
                     </ul>
@@ -703,15 +789,11 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/imagesloaded.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
-<script src="js/blog.js"></script>
 </body>
 </html>
