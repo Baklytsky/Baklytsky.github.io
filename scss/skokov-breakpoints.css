@@ -130,6 +130,33 @@
   .blog .single-blog-wrapper {
     padding: 0 5%; }
 
+  .section-headline-about {
+    padding: 2% 0; }
+    .section-headline-about h2 .headline {
+      font-size: 1em; }
+
+  .section-headline-contact {
+    padding: 2% 0; }
+    .section-headline-contact h2 .headline {
+      font-size: 1em; }
+
+  .section-headline-404 {
+    padding: 2% 0; }
+    .section-headline-404 h2 .headline {
+      font-size: 1em; }
+
+  .error h1 {
+    font-size: 12.5em; }
+  .error .error-text {
+    font-size: 5.4em; }
+    .error .error-text .bigger-text {
+      font-size: 2em; }
+  .error .error-btn {
+    padding: 8px 15px; }
+  .error .btn-choice {
+    padding: 8px 10px 10px;
+    margin: 0 15px; }
+
   .footer .middle {
     line-height: 1; }
   .footer .footer-text {
@@ -238,7 +265,12 @@
   .about .about-subtitle {
     font-size: 0.8em; }
   .about .about-text {
-    font-size: 0.8em; } }
+    font-size: 0.8em; }
+
+  .message-form .contact-text {
+    font-size: 1em; }
+  .message-form .mail-link {
+    font-size: 1em; } }
 @media (min-width: 1600px) {
   aside .sidebar-item .left-column-list {
     padding-right: 40px; }
